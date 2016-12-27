@@ -1,0 +1,14 @@
+<script>
+var NameSpace = window.NameSpace || {};
+/*
+Function
+*/
+NameSpace.Hello = function() {
+  this.ok = 'word';
+};
+NameSpace.Hello.prototype.sayHello = function(_name) {
+  alert( 'Hello ' + (_name || this.ok));
+};
+var hello = new NameSpace.Hello();
+hello.sayHello();
+</script>
